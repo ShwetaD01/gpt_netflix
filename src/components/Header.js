@@ -51,7 +51,7 @@ const Header = () => {
   return (
     <div className="fixed w-screen px:0 md:px-8 py-0 md:py-2 bg-gradient-to-b from-black z-10 flex flex-col md:flex-row justify-between">
       <img className="w-48 mx-auto pt-[2%] md:mx-0" src={LOGO} alt="logo" />
-      <div className='flex justify-between -pt:[5%] md:pt-0 md:m-5'>
+      <div className='flex justify-center md:justify-between -pt:[5%] md:pt-0 md:m-5'>
         {user  && (<>
         {showGptSearch ? (<select
             className="p-2 m-2 bg-gray-900 text-white"
