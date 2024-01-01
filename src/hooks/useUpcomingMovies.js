@@ -15,7 +15,8 @@ const upcomingMovies = useSelector(store => store.movies.upcomingMovies)
   }
   useEffect(()=> {
     !upcomingMovies && getMovies();
-  }, [upcomingMovies, getMovies])
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
   
 }
 
