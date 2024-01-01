@@ -15,7 +15,7 @@ const upcomingMovies = useSelector(store => store.movies.upcomingMovies)
   }
   useEffect(()=> {
     !upcomingMovies && getMovies();
-  }, [])
+  }, [upcomingMovies, getMovies])
   
 }
 
